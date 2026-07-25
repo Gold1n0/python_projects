@@ -1,0 +1,1 @@
+This is a compilation of all the mini projects and practice done for study using the udemy course 100 days of python coding. Be warned code is sloppy and messy and this repo is used as a journal of sorts to record my learning journey.
