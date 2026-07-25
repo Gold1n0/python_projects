@@ -28,4 +28,3 @@ while continue_calc == True:
         break
     elif cont == "y": 
         first_num = calc(first_num,second_num, operator)      
-
