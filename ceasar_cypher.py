@@ -23,16 +23,23 @@ def decode(message, shift):
             new_message += new_letter
     return new_message 
 
-picker = (input("Choose between decoder and encoder ").lower())
-message = list(input("This is the encoder please insert your message: ").lower())
-shift = int(input("This is the encoder please insert your shift: "))
+continue_or_not = True
 
-result_encode = encode(message, shift)
-result_decode = decode(message, shift)
+while continue_or_not is True:
+    picker = (input("Choose between decoder and encoder ").lower())
+    message = list(input("This is the encoder please insert your message: ").lower())
+    shift = int(input("This is the encoder please insert your shift: "))
 
-if picker == "encoder": 
-    print (result_encode)
-elif picker == "decoder":
-    print (result_decode)
-else: 
-    print ("You didn't choose encoder or decoder!")
+    result_encode = encode(message, shift)
+    result_decode = decode(message, shift)
+    if picker == "encoder": 
+        print (result_encode)
+    elif picker == "decoder":
+        print (result_decode)
+    else: 
+        print ("You didn't choose encoder or decoder!")
+
+    restart = input ("Type 'yes' to go again, type 'no' to quit ").lower()
+    if restart == 'no':
+        continue_or_not = False
+        print("Bye Bye!")
