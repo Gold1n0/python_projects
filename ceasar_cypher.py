@@ -1,6 +1,6 @@
 import string 
 
-
+print ("Welcome to the Ceaser Cypher Encoder / Decoder")
 alphabet = list(string.ascii_lowercase)
 
 def encode(message, shift):
@@ -23,9 +23,9 @@ def decode(message, shift):
             new_message += new_letter
     return new_message 
 
-picker = (input("Choose between decoder and encoder").lower())
-message = list(input("This is the encoder please insert your message:").lower())
-shift = int(input("This is the encoder please insert your shift:"))
+picker = (input("Choose between decoder and encoder ").lower())
+message = list(input("This is the encoder please insert your message: ").lower())
+shift = int(input("This is the encoder please insert your shift: "))
 
 result_encode = encode(message, shift)
 result_decode = decode(message, shift)
