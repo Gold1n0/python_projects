@@ -11,8 +11,6 @@ def encode(message, shift):
             new_position = (index_position + shift) % 26
             new_letter = alphabet[new_position]
             new_message += new_letter
-        else:
-            new_message += letter
     return new_message 
 
 def decode(message, shift):
@@ -23,8 +21,6 @@ def decode(message, shift):
             new_position = (index_position - shift) % 26
             new_letter = alphabet[new_position]
             new_message += new_letter
-        else:
-            new_message += letter
     return new_message 
 
 picker = (input("Choose between decoder and encoder").lower())
