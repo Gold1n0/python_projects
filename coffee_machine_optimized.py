@@ -17,7 +17,7 @@ def collect_coins():
     penny_input = int(input("Please insert pennies "))
     return (quarter * quarter_input) + (dime * dime_input) + (nickel * nickel_input) + (pennies * penny_input)
 
-def make_coffee(drink_name, price, water_needed, coffee_needed, milk_needed=0):
+def make_coffee(drink_name, price, water_needed, coffee_needed, milk_needed):
     global water, coffee, milk, money
 
     payment_calc = collect_coins()
