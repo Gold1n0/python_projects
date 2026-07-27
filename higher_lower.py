@@ -71,4 +71,3 @@ while game_state == True:
 
     if keep_playing == "n":
         print (f"Sad to see you go! your final score was: {score}")
-        game_state = False
